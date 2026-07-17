@@ -16,10 +16,68 @@
 			type="image/x-icon"
 			sizes="96x96"
 		/>
-
 		<title>Flip the coin | devChallenges.io</title>
+		<style>
+			html,
+			* {
+				font-family: 'kanit', 'sans-serif';
+				background-color: #404a65;
+				color: #ecedf0;
+				font-size: 16px;
+			}
 
-		<style></style>
+			main {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+			main > *,
+			.seperator {
+				margin: 0;
+				margin-top: 3rem;
+			}
+
+			h1 {
+				font-size: 4rem;
+				font-weight: 900;
+				margin: 0;
+				text-align: center;
+				text-shadow: 2px 2px 0px #35383f;
+				-webkit-text-stroke-width: 5px;
+				-webkit-text-stroke-color: #35383f;
+			}
+
+			p {
+				font-size: 1.375rem;
+				font-weight: 500;
+				margin: 0.125rem;
+			}
+
+			.btn {
+				width: 10rem;
+				height: 3rem;
+
+				outline: 0px;
+				border: 0px;
+				font-size: 1.25rem;
+				font-weight: 600;
+
+				border-radius: 0.5rem;
+				cursor: pointer;
+
+				color: #ecedf0;
+				background-color: #1F6FB0;
+				box-shadow: 0px 4px 0px 0px #1f6fb0;
+			}
+
+			#answer {
+				height: 3rem;
+				font-size: 2rem;
+				font-weight: 500;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -40,5 +98,28 @@
 			</div>
 		</main>
 	</body>
-	<script src="./script.js"></script>
+	<script>
+		function clickHandle() {
+			const coins = [
+				{
+					name: 'Heads',
+					src: './resources/heads.svg',
+				},
+				{
+					name: 'Tails',
+					src: './resources/tails.svg',
+				},
+			];
+			let div = document.getElementById('answer');
+			let img = document.getElementById('img');
+
+			const idx = Math.random() < 0.5 ? 0 : 1;
+			console.log(idx);
+			div.textContent = coins[idx].name;
+			img.src = coins[idx].src;
+		}
+
+		const btn = document.getElementById('btn');
+		btn.onclick = clickHandle;
+	</script>
 </html>
