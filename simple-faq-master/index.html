@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="smiple FAQ desctiption" />
+		<meta name="keywords" content="FAQ shipping" />
+		<meta name="author" content="John Doe" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			href="resources/favicon.ico"
+			type="image/x-icon"
+			sizes="96x96"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Simple FAQ | devChallenges.io</title>
+		<style>
+			:root {
+				--blue: #4e80ee;
+				--white: #ffffff;
+				--white-secondary: #f8fafc;
+				--grey: #d2d5da;
+				--black: #030616;
+				font-family: 'Inter', sans-serif;
+			}
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+				background-color: var(--white-secondary);
+			}
+
+			.faq-header {
+				padding: 3rem;
+				margin: 0;
+				background-color: var(--white);
+				color: black;
+				text-align: center;
+			}
+			.faq-header h1 {
+				margin-bottom: 0;
+			}
+			a {
+				color: var(--blue);
+				text-decoration: none;
+			}
+
+			.faq-header h1 {
+				font-size: 2.25rem;
+				font-weight: 600px;
+			}
+			.faq-body {
+				margin: 1rem 20rem;
+			}
+			@media (max-width: 768px) {
+				.faq-body {
+					margin: 1rem 2.5rem;
+				}
+			}
+			@media (max-width: 1024px) {
+				.faq-body {
+					margin: 1rem 12rem;
+				}
+			}
+			.faq-section {
+				padding: 2rem 0;
+			}
+
+			hr {
+				background-color: var(--grey);
+				color: var(--grey);
+			}
+			.faq-question h2 {
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+			.faq-answer {
+				font-size: 1rem;
+				font-weight: 400;
+			}
+			li {
+				line-height: 2.25;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="faq-header">
+			<h1>Frequently Asked Questions</h1>
+			<p>Browse through the most frequently asked questions</p>
+		</div>
+		<div class="faq-body">
+			<div class="faq-section">
+				<div class="faq-question">
+					<h2>How can I track my order?</h2>
+				</div>
+				<div class="faq-answer">
+					<p>You can track your order using the following steps :</p>
+					<ol>
+						<li>Go to the Order <a href="">Tracking page</a>.</li>
+						<li>Enter your order number and email address.</li>
+						<li>
+							Click on the Track Order button to view the current
+							status of your shipment.
+						</li>
+					</ol>
+
+					<p>
+						If you encounter any issues, please visit our
+						<a href="">Help Center</a>.
+					</p>
+				</div>
+			</div>
+			<hr />
+			<div class="faq-section">
+				<div class="faq-question">
+					<h2>What is your return policy?</h2>
+				</div>
+				<div class="faq-answer">
+					<p>
+						We offer a 30-day return policy on most items. Here are
+						some key points :
+					</p>
+					<ul>
+						<li>
+							<strong
+								>Items must be in original condition :
+							</strong>
+							Unworn, unused, and unwashed.
+						</li>
+						<li>
+							<strong
+								>Include original packaging and tags:
+							</strong>
+							All items should be returned with their original
+							packaging and tags.
+						</li>
+						<li>
+							<strong>Proof of purchase : </strong> A receipt or
+							proof of purchase is required.
+						</li>
+					</ul>
+					<p>
+						For more detailed information, read our full
+						<a href="">Return Policy</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
